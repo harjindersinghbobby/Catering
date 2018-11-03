@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:float="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml"
+      xmlns:height="http://www.w3.org/1999/xhtml" xmlns:background-color="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Start HTML Slider Code HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End HTML Slider Code HEAD section -->
+<script type="text/javascript">
+
+</script>
+
+    <!-- Start CSS Slideshow HEAD section -->
+
+    <!-- End CSS Slider HEAD section -->
+    <link rel="stylesheet" href="animate.css">
+    <meta charset="UTF-8">
+    <script src="jquery.min.js"></script>
+    <title>Catering</title>
+
+    <style>
+
+
+
+        #slideshow {
+            border-style: solid;
+            border-width: 4px;
+            border-color: black;
+            overflow: hidden;
+            height: 310px;
+            width: 1210px;
+            margin-top: 150px;
+            margin-left: 50px;
+        }
+
+        .slide-wrapper {
+            width: 2912px;
+            -webkit-animation: slide 10s ease infinite;
+        }
+
+        .slide {
+            float: left;
+            height: 510px;
+            width: 728px;
+        }
+
+
+        @-webkit-keyframes slide {
+            5%{margin-left: 0px}
+            10%{margin-left: 20px}
+            20% {margin-left: 0px;}
+            30% {margin-left: -728px;}
+            50% {margin-left: -728px;}
+            60% {margin-left: -1456px;}
+            70% {margin-left: -1456px;}
+        }
+
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .navul {
+            position: fixed;
+            top: 0;
+            width: 95%;
+            list-style-type: none;
+            overflow: hidden;
+            background-color: white;
+        }
+        .navigation{
+            opacity: .95;
+        }
+        .navl
+        {
+            float: right;
+        }
+
+        .nava {
+            display: block;
+            color:black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change the link color to #111 (black) on hover */
+        .nava:hover {
+            background-color: lawngreen;
+            zoom: 125%;
+            font-family: cursive;
+        }
+        .galary:hover{
+        }
+
+        .navl {
+            border-right: 1px solid #bbb;
+        }
+
+        .navl:first-child {
+            margin-right: 10px;
+        }
+
+        .contactus{
+            width: 1210px;
+            height:460px;
+            margin-top:100px;
+            margin-left: 50px;
+            border: black solid 5px;
+        }
+        .container 		{
+            opacity: 0.8;
+            float: left;
+            font-family:'Roboto';
+            width:200px;
+            height: 360px;
+            margin-top: 20px;
+            margin-left: 30px;
+            display:block;
+            background:#FFF;
+            padding:10px 25px 10px 10px;
+        }
+
+
+        .footer 	{ text-align:center; }
+        .footer a  { color:#53B2C8; }
+
+        /* form starting stylings ------------------------------- */
+        .group
+        {
+            position:relative;
+            margin-bottom:25px;
+        }
+        input 				{
+            font-size:18px;
+            padding:10px 10px 10px 5px;
+            display:block;
+            width:195px;
+            border:none;
+            border-bottom:1px solid #757575;
+        }
+        input:focus 		{ outline:none; }
+
+        /* LABEL ======================================= */
+        label 				 {
+            color:#111;
+            font-size:18px;
+            font-weight:normal;
+            position:absolute;
+            pointer-events:none;
+            left:5px;
+            top:1px;
+            transition:0.2s ease all;
+            -moz-transition:0.2s ease all;
+            -webkit-transition:0.2s ease all;
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label 		{
+            top:-15px;
+            font-size:14px;
+            color:#5264AE;
+        }
+
+        /* BOTTOM BARS ================================= */
+        .bar 	{ position:relative; display:block; width:210px; }
+        .bar:before, .bar:after 	{
+            content:'';
+            height:2px;
+            width:0;
+            bottom:1px;
+            position:absolute;
+            background:#5264AE;
+            transition:0.2s ease all;
+            -moz-transition:0.2s ease all;
+            -webkit-transition:0.2s ease all;
+        }
+        .bar:before {
+            left:50%;
+        }
+        .bar:after {
+            right:50%;
+        }
+
+        /* active state */
+        input:focus ~ .bar:before, input:focus ~ .bar:after {
+            width:50%;
+        }
+
+        /* HIGHLIGHTER ================================== */
+        .highlight {
+            position:absolute;
+            height:60%;
+            width:100px;
+            top:25%;
+            left:0;
+            pointer-events:none;
+            opacity:0.5;
+        }
+
+        /* active state */
+        input:focus ~ .highlight {
+            -webkit-animation:inputHighlighter 0.3s ease;
+            -moz-animation:inputHighlighter 0.3s ease;
+            animation:inputHighlighter 0.3s ease;
+        }
+
+        /* ANIMATIONS ================ */
+        @-webkit-keyframes inputHighlighter {
+            from { background:#5264AE; }
+            to 	{ width:0; background:transparent; }
+        }
+        @-moz-keyframes inputHighlighter {
+            from { background:#5264AE; }
+            to 	{ width:0; background:transparent; }
+        }
+        @keyframes inputHighlighter {
+            from { background:#5264AE; }
+            to 	{ width:0; background:transparent; }
+        }
+          .send_btn{
+            background: chartreuse;
+            padding: 10px 10px 10px 10px;
+
+        }
+        .Events{
+            background-color: white;
+            opacity: .9;
+            margin-top: 50px;
+            height: 500px;
+            width: 1210px;
+            margin-left: 50px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+
+        }
+        .hotel{
+            padding: 5px;
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+            float: left;
+            border-style: solid;
+            border-width: 5px;
+            border-color: lawngreen;
+            margin-left: 30px;
+
+        }
+        .marriage{
+            padding: 5px;
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin-left: 30px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: lawngreen;
+        }
+        .party{
+            padding: 5px;
+            margin-top: 25px;
+            height: 300px;
+            width: 300px;
+            float: left;
+            margin-left: 70px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: lawngreen;
+        }
+        .Menu{
+            background-color: white;
+            opacity: .9;
+            margin-top: 50px;
+            height: 1450px;
+            width: 1210px;
+            margin-left: 50px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+        }
+        .BtypeA{
+            list-style-type: none;
+            float: left;
+            margin-top: 25px;
+            margin-left:65px;
+            height: 345px;
+            width: 200px;
+            border-style: dotted;
+            border-width: 7px;
+            border-color: red;
+            background-color: khaki;
+        }
+        .lunch{
+            margin-top: 450px;
+        }
+        .BtypeA:hover {
+            border-color: blue;
+        }
+
+    </style>
+    <script>
+        function hoverOn() {
+            $('.BtypeA').addClass('animated bounce');
+        }
+        function hoverOff() {
+            $('.harji').removeClass('animated bounce');
+        }
+    </script>
+
+
+</head>
+
+<body background="black_glass.jpg " >
+
+
+    <nav style="position: fixed; z-index: 100;">
+        <ul  class="navul">
+            <img src="logo.png" align="left" height="100" width="200">
+                <li class="navl"><a class="nava"  href="#aboutuss">About Us</a></li>
+                <li class="navl"><a class="nava"  href="#contact">Contact Us</a> </li>
+                <li class="navl"><a class="nava"  href="#onEvents">Events</a></li>
+                <li class="navl"><a class="nava"  href="#Menus">Menu</a></li>
+                <li class="navl"><a class="nava"  href="#">Home </a> </li>
+            </div>
+        </ul>
+    </nav>
+<div id="slideshow">
+    <div class="slide-wrapper">
+        <div class="slide"><img class="slide-number" img src="foreogn_lunch2.jpg"></div>
+        <div class="slide"><img class="slide-number" img src="g5.jpg"></div>
+        <div class="slide"><img class="slide-number" img src="c2.jpg"></div>
+        <div class="slide"><img class="slide-number" img src="c1.jpg" style="float: left"></div>
+    </div>
+</div>
+    <div style="margin-left:50px; border: black solid 5px; height:200px; margin-top: 50px; margin-bottom: 100px; width: 1210px; background-color: white; opacity: .9;">
+        <h1 align="center">About Us</h1>
+        <p style="padding: 10px;
+        color:black; alignment: center; font-weight: bold; font-family: cursive;" >In the recent decade,. With body the rapid with development in the mobile communication technology a mobile phone use  with With the development in a a a the mobile between communication technology a mobile phone is evolving from a wireless device for voice use use only between communications to a truly portable personal terminal for data between communication and networking. Today, mobile handsets are essential with handheld computers with integrate. for data between communication and networking. Today, mobile handsets are essential with handheld computers with integrate to the seen</p>
+
+    </div>
+</div>
+
+<div class="contactus">
+    <img src="c1.jpg"; width="400px" height="400px" style="float: left; margin-left: 60px; margin-top: 20px;">
+<div class="container" id="contact">
+    <h4 align="center">CONTACTS US <small><br>for the order</small></h4>
+
+    <form action="contactus.php" METHOD="post">
+
+            <div  align="center" class="group">
+                <input type="text" name="name" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label style="align-content: center">Name</label>
+            </div>
+
+            <div  align="center" class="group">
+                <input type="text" name="email" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+
+            <div  align="center" class="group">
+                <input type="text" name="number" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>number</label>
+            </div>
+
+            <div class="group">
+                <input type="submit" name="submit" value="SUBMIT" align="center" class="send_btn" required>
+                <span class="hhighlight"></span>
+                <span class="hbar"></span>
+            </div>
+
+    </form>
+
+</div>
+    <img src="contactus2.jpg"; width="400px" height="400px" style="float:left; margin-left: 20px;  margin-top: 20px;">
+</div>
+<div class="Menu" id="Menus">
+    <h1 align="center">MENU </h1>
+    <div class="breakfast">
+
+
+    <h2 align="center">Breakfast<small><br>select any 1 of your choice</small> </h2>
+
+    <div class="BtypeA onmouseover=hoverOn() out=hoverOff()">
+        <div style="background-color:khaki;padding: 1px;">
+        <h3 align="center">Punjabi</h3>
+        </div>
+        <div>
+        <img src="punjabi_break.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+        </div>
+        <div style="background-color: khaki; padding: 1px;">
+        <ul>
+            <li>samosa</li>
+            <li>vadapao</li>
+            <li>Idli</li>
+            <li>dosa 4</li>
+            <li>nirdosa 5</li>
+            <li>tea</li>
+            <li>cofee 7</li>
+            <li>salsa</li>
+        </ul>
+        </div>
+    </div>
+
+        <div class="BtypeA" style="cursor: pointer">
+            <div style=" padding: 0.08px">
+                <h3 align="center">South Indian</h3>
+            </div>
+            <div>
+                <img src="south_break.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="BtypeA">
+            <div style="padding: 0.1px">
+                <h3 align="center">North Indian</h3>
+            </div>
+            <div>
+                <img src="north_break.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="BtypeA">
+            <div style=" padding: 0.08px">
+                <h3 align="center">Gujarati</h3>
+            </div>
+            <div>
+                <img src="gujarati_break.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="lunch" >
+        <h2 align="center" class="lunchheading">LUNCH<small><br>select any 1 of yr choice</small> </h2>
+
+
+        <div class="BtypeA">
+            <div style="background-color:khaki;padding: 1px;">
+                <h3 align="center">Punjabi</h3>
+            </div>
+            <div>
+                <img src="punjabi_lunch.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="BtypeA">
+            <div style=" padding: 0.08px">
+                <h3 align="center">South Indian</h3>
+            </div>
+            <div>
+                <img src="south_lunch.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="BtypeA">
+            <div style="padding: 0.1px">
+                <h3 align="center">North Indian</h3>
+            </div>
+            <div>
+                <img src="north1_lunch.jpeg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="BtypeA">
+            <div style=" padding: 0.08px">
+                <h3 align="center">Gujarati</h3>
+            </div>
+            <div>
+                <img src="gujarati_lunch.jpg" height="100px" width="200px"  style="border-radius: 12%;">
+            </div>
+            <div style="background-color: khaki; padding: 1px;">
+                <ul>
+                    <li>samosa</li>
+                    <li>vadapao</li>
+                    <li>Idli</li>
+                    <li>dosa 4</li>
+                    <li>nirdosa 5</li>
+                    <li>tea</li>
+                    <li>cofee 7</li>
+                    <li>salsa</li>
+                </ul>
+            </div>
+        </div>
+    <div class="BtypeA">
+        <h3 align="center">Veg Special</h3>
+        <img src="veg1_lunch.jpg" height="100px" width="200px"  style="float: right; border-radius: 12%">
+
+        <ul>
+            <li>roti</li>
+            <li>rice </li>
+            <li>bhendi </li>
+            <li>dhal</li>
+            <li>salad </li>
+            <li>gobhi</li>
+            <li>kheer</li>
+            <li>icecream</li>
+        </ul>
+
+    </div>
+    <div class="BtypeA">
+        <h3 align="center"> Tandoor Special </h3>
+        <img src="leg_piece2.jpg" height="100px" width="200px"  style="float: right; border-radius: 12%">
+        <ul>
+            <li>chicken alfam</li>
+            <li>chiikka tikka</li>
+            <li>chicken sukka</li>
+            <li>roti</li>
+            <li>rice</li>
+            <li>salad 6</li>
+            <li>parota</li>
+            <li>rumali</li>
+        </ul>
+
+    </div>
+    <div class="BtypeA">
+        <h3 align="center">Non veg with mutton</h3>
+        <img src="mutton.jpg" height="100px" width="200px"  style="float: right; border-radius: 12%">
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+        </ul>
+
+    </div>
+    <div class="BtypeA">
+        <h3 align="center">Foreign special</h3>
+        <img src="foreogn_lunch2.jpg" height="100px" width="200px"  style="float: right; border-radius: 12%">
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+        </ul>
+
+    </div>
+    </div>
+</div>
+
+
+<div class="Events" id="onEvents">
+        <h1 align="center">Our Events</h1>
+        <div class="party" style="color: black; background:white;">
+            <h1 align="center" style="color: black">Party</h1><p>In the recent decade, the explosive growths in the cellular mobile communication have been
+            changing the way people live and work. With the rapid development in the mobile communication technology,
+            a mobile phone is evolving from a wireless device for voice only communications to a truly portable personal terminal
+            for data communication and networking. Today, mobile handsets are essential handheld computers with integrated mobile
+        </p>
+        </div>
+
+        <div class="marriage" style="color: black; background:white;">
+            <h1 align="center" style="color: black">Marriage</h1><p>In the recent decade, the explosive growths in the cellular mobile communication have been
+            changing the way people live and work. With the rapid development in the mobile communication technology,
+            a mobile phone is evolving from a wireless device for voice only communications to a truly portable personal terminal
+            for data communication and networking. Today, mobile handsets are essential handheld computers with integrated mobile
+        </p>
+        </div>
+
+        <div class="hotel" style="color: black; background:white;">
+            <h1 align="center" style="color: black">Hotel</h1><p>In the recent decade, the explosive growths in the cellular mobile communication have been
+            changing the way people live and work. With the rapid development in the mobile communication technology,
+            a mobile phone is evolving from a wireless device for voice only communications to a truly portable personal terminal
+            for data communication and networking. Today, mobile handsets are essential handheld computers with integrated mobile
+        </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
